@@ -1,0 +1,5 @@
+# VIM
+alias vim=mvim
+
+# GIT
+alias gs='clear; git status'
