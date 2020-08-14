@@ -3,3 +3,4 @@ alias vim=mvim
 
 # GIT
 alias gs='clear; git status'
+alias syncGitIgnore='git rm -r --cached .; git add .'

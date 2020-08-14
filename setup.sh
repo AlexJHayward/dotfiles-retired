@@ -22,3 +22,7 @@ open ~/.dotfiles/themes/seoul256.itermcolors
 ln -s ~/.dotfiles/gvimrc ~/.gvimrc 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# NVM ============
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+nvm install node
