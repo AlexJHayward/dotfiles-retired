@@ -1,3 +1,6 @@
 [submodule "alfred-workflows"]
 	path = alfred-workflows
 	url = git@github.com:AlexJHayward/alfred-workflows.git
+[submodule "typewritten"]
+	path = typewritten
+	url = https://github.com/reobin/typewritten.git

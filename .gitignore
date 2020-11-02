@@ -1,2 +1,3 @@
 *.swp
-work-aliases
+work/**
+.oh-my-zsh/**

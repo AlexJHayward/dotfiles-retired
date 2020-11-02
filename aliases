@@ -1,6 +1,19 @@
-# VIM
-alias vim=mvim
-
 # GIT
 alias gs='clear; git status'
 alias syncGitIgnore='git rm -r --cached .; git add .'
+
+#!/bin/bash
+
+######### Docker
+alias drma='docker rm $(docker ps -a -q)'
+
+######### Vim
+alias vim='open -a MacVim'
+
+######### BBEdit
+alias bf='bbedit_find'
+alias bbeditconflicts='git diff --name-only --diff-filter=U | tr \\n \\0 |  xargs -0 bbedit'
+
+function bbedit_find {
+	bbfind $1 . --gui
+}
