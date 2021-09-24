@@ -9,7 +9,9 @@ brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 brew install ammonite-repl
 brew install starship
-brew install antigen
+
+# antigen ============
+curl -L git.io/antigen > antigen.zsh
 
 # NVM =================
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
