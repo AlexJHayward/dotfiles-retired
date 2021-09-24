@@ -20,6 +20,8 @@ brew install jq
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 brew install ammonite-repl
+brew install starship
+brew install antigen
 
 # ALFRED ==========
 echo "Installing alfred workflows"
@@ -32,20 +34,6 @@ cd -
 # NVM =================
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
 nvm install node --latest-npm
-
-# OH-MY-ZSH ============
-# 1. install 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# 2. move and symlink omz files
-mv ~/.oh-my-zsh ~/.dotfiles/oh-my-zsh
-ln -s ~/.dotfiles/oh-my-zsh ~/.oh-my-zsh
-rm ~/.zshrc
-ln -s ~/.dotfiles/zshrc ~/.zshrc
-# 3. install custom theme
-npm install --global pure-prompt
-echo "custom iterm colours will now be installed"
-open ~/.dotfiles/themes/seoul256.itermcolors
-echo "press any key to continue" && read -n 1
 
 # MACVIM ===========
 ln -s ~/.dotfiles/gvimrc ~/.gvimrc 
